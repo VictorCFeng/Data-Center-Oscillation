@@ -1,0 +1,753 @@
+{
+  "table": [
+    {
+      "name": "lead_support_optimized",
+      "label": "Lead + support (optimized)",
+      "states": 17,
+      "rms_MW": {
+        "server": 0.08830709647155731,
+        "grid": 0.03531087114176401,
+        "combined": 0.08783039009372076
+      },
+      "frequency_pass": 13,
+      "worst_isolation": 0.03713510500383058,
+      "worst_grid_error": 0.4499955376610003,
+      "noise_MW": 1.414197639929079,
+      "hess_peak_MW": 5.971198855265503,
+      "energy_excursion_kWh": 2.781721288029129,
+      "grid_frequency_drop_Hz": 0.04861222022654932
+    },
+    {
+      "name": "independent_local_q",
+      "states": 17,
+      "rms_MW": {
+        "server": 0.017113486903429797,
+        "grid": 0.007899856910475022,
+        "combined": 0.017595510675603842
+      },
+      "frequency_pass": 13,
+      "stable_points": 13,
+      "worst_isolation": 0.025169899028568303,
+      "worst_grid_error": 0.3690635255175832,
+      "noise_MW": 1.2044551891990825,
+      "hess_peak_MW": 6.0741045378278,
+      "energy_excursion_kWh": 2.785799860207678,
+      "grid_frequency_drop_Hz": 0.048541829200234865
+    }
+  ],
+  "rows": [
+    {
+      "name": "independent_local_q",
+      "op": 1,
+      "event": "server",
+      "rms_MW": 0.016475321867313517,
+      "rms_by_site_MW": [
+        0.00901229643609334,
+        0.013791836120675095
+      ],
+      "hess_peak_MW": 4.888983123594426,
+      "energy_excursion_kWh": 0.12966769162125075,
+      "frequency_drop_Hz": 5.753555359477858e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 8.810840945727705e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 1,
+      "event": "grid",
+      "rms_MW": 0.00649346650310192,
+      "rms_by_site_MW": [
+        0.005801850011992509,
+        0.0029161007639053223
+      ],
+      "hess_peak_MW": 2.0597147816226324,
+      "energy_excursion_kWh": 2.721677150547835,
+      "frequency_drop_Hz": 0.04798175427948692,
+      "clipping_max": 0.0,
+      "kcl_max": 3.319689878891752e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 1,
+      "event": "combined",
+      "rms_MW": 0.016697834680827684,
+      "rms_by_site_MW": [
+        0.010154336856354813,
+        0.013255456462752462
+      ],
+      "hess_peak_MW": 5.892484706448644,
+      "energy_excursion_kWh": 2.7574595517687666,
+      "frequency_drop_Hz": 0.04787645448658173,
+      "clipping_max": 0.0,
+      "kcl_max": 3.324885700962954e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 2,
+      "event": "server",
+      "rms_MW": 0.015976953017834167,
+      "rms_by_site_MW": [
+        0.008646793219444206,
+        0.013434879781905532
+      ],
+      "hess_peak_MW": 4.730452986653369,
+      "energy_excursion_kWh": 0.12899385584497558,
+      "frequency_drop_Hz": 5.7490195630727214e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 8.174849686071184e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 2,
+      "event": "grid",
+      "rms_MW": 0.006635797258312394,
+      "rms_by_site_MW": [
+        0.0059531326030534595,
+        0.0029315554683287557
+      ],
+      "hess_peak_MW": 2.0512387997261152,
+      "energy_excursion_kWh": 2.7206170472614146,
+      "frequency_drop_Hz": 0.04796884938288892,
+      "clipping_max": 0.0,
+      "kcl_max": 2.5197422229778152e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 2,
+      "event": "combined",
+      "rms_MW": 0.01631991816386777,
+      "rms_by_site_MW": [
+        0.009965874303849454,
+        0.012923663498993399
+      ],
+      "hess_peak_MW": 5.845149084920116,
+      "energy_excursion_kWh": 2.756904365453666,
+      "frequency_drop_Hz": 0.047867349864032516,
+      "clipping_max": 0.0,
+      "kcl_max": 2.5277915549675864e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 3,
+      "event": "server",
+      "rms_MW": 0.017015625694632348,
+      "rms_by_site_MW": [
+        0.009413663786213916,
+        0.014174429508800603
+      ],
+      "hess_peak_MW": 5.111508473614747,
+      "energy_excursion_kWh": 0.1302890241192772,
+      "frequency_drop_Hz": 5.757727467470275e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 9.190759264754433e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 3,
+      "event": "grid",
+      "rms_MW": 0.006613035350348311,
+      "rms_by_site_MW": [
+        0.005823519196438066,
+        0.0031335061374878044
+      ],
+      "hess_peak_MW": 2.0676059767735193,
+      "energy_excursion_kWh": 2.7229309623933156,
+      "frequency_drop_Hz": 0.04799637251093225,
+      "clipping_max": 0.0,
+      "kcl_max": 3.424613838240473e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 3,
+      "event": "combined",
+      "rms_MW": 0.01721501947988404,
+      "rms_by_site_MW": [
+        0.010468909622840857,
+        0.01366597332799889
+      ],
+      "hess_peak_MW": 5.928040222702958,
+      "energy_excursion_kWh": 2.75823407265574,
+      "frequency_drop_Hz": 0.04788801163422063,
+      "clipping_max": 0.0,
+      "kcl_max": 3.443881426906496e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 4,
+      "event": "grid",
+      "rms_MW": 0.006198238262613051,
+      "rms_by_site_MW": [
+        0.004862509416374295,
+        0.003843716916708586
+      ],
+      "hess_peak_MW": 2.090373003307274,
+      "energy_excursion_kWh": 2.7495024495250937,
+      "frequency_drop_Hz": 0.0485309098990383,
+      "clipping_max": 0.0,
+      "kcl_max": 3.261548735082609e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 5,
+      "event": "server",
+      "rms_MW": 0.016559549572580774,
+      "rms_by_site_MW": [
+        0.008983203724643686,
+        0.013911172951563354
+      ],
+      "hess_peak_MW": 4.889753949128896,
+      "energy_excursion_kWh": 0.12961579884626792,
+      "frequency_drop_Hz": 5.996604813374162e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 9.988787574854996e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 5,
+      "event": "combined",
+      "rms_MW": 0.017152686225668245,
+      "rms_by_site_MW": [
+        0.010811118020834593,
+        0.013316695231768828
+      ],
+      "hess_peak_MW": 5.942745504535748,
+      "energy_excursion_kWh": 2.7288996663577763,
+      "frequency_drop_Hz": 0.0473135180220452,
+      "clipping_max": 0.0,
+      "kcl_max": 2.5668900598824207e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 6,
+      "event": "grid",
+      "rms_MW": 0.00625964779887391,
+      "rms_by_site_MW": [
+        0.0053319355477318,
+        0.0032792764264058276
+      ],
+      "hess_peak_MW": 2.0699061211395584,
+      "energy_excursion_kWh": 2.735154078049096,
+      "frequency_drop_Hz": 0.048252377328144025,
+      "clipping_max": 0.0,
+      "kcl_max": 4.757414557785e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 7,
+      "event": "server",
+      "rms_MW": 0.016264300179701367,
+      "rms_by_site_MW": [
+        0.008815951959690194,
+        0.01366771566063139
+      ],
+      "hess_peak_MW": 4.797453802990578,
+      "energy_excursion_kWh": 0.12930350489206094,
+      "frequency_drop_Hz": 5.877092939643447e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 8.131495476959572e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 7,
+      "event": "combined",
+      "rms_MW": 0.01671135089456569,
+      "rms_by_site_MW": [
+        0.010367402133751627,
+        0.013106724293979168
+      ],
+      "hess_peak_MW": 5.886343900247332,
+      "energy_excursion_kWh": 2.7428934672829857,
+      "frequency_drop_Hz": 0.047591100791608554,
+      "clipping_max": 0.0,
+      "kcl_max": 4.6127602171958104e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 8,
+      "event": "grid",
+      "rms_MW": 0.006329499797802639,
+      "rms_by_site_MW": [
+        0.005314764695187036,
+        0.0034374182063253663
+      ],
+      "hess_peak_MW": 2.076518575527784,
+      "energy_excursion_kWh": 2.7362121598866853,
+      "frequency_drop_Hz": 0.04826410794535496,
+      "clipping_max": 0.0,
+      "kcl_max": 5.2841332004449626e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 9,
+      "event": "server",
+      "rms_MW": 0.016788924554484618,
+      "rms_by_site_MW": [
+        0.009201105516413156,
+        0.014043063945307943
+      ],
+      "hess_peak_MW": 5.003487620795303,
+      "energy_excursion_kWh": 0.1299622268319778,
+      "frequency_drop_Hz": 5.8858724754085046e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 9.634848474604496e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 9,
+      "event": "combined",
+      "rms_MW": 0.017112676835191864,
+      "rms_by_site_MW": [
+        0.010559782567351747,
+        0.013466057351577201
+      ],
+      "hess_peak_MW": 5.937073543374828,
+      "energy_excursion_kWh": 2.743703196715419,
+      "frequency_drop_Hz": 0.047603223270769046,
+      "clipping_max": 0.0,
+      "kcl_max": 2.4618545917121093e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 10,
+      "event": "grid",
+      "rms_MW": 0.006159574748374799,
+      "rms_by_site_MW": [
+        0.0049173293696423755,
+        0.003709478797792081
+      ],
+      "hess_peak_MW": 2.0848683242963,
+      "energy_excursion_kWh": 2.7486703932968544,
+      "frequency_drop_Hz": 0.04852209169066146,
+      "clipping_max": 0.0,
+      "kcl_max": 4.1520155369401124e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 11,
+      "event": "server",
+      "rms_MW": 0.016049980296806377,
+      "rms_by_site_MW": [
+        0.008613503861591383,
+        0.013542873356648628
+      ],
+      "hess_peak_MW": 4.733200207168861,
+      "energy_excursion_kWh": 0.1289381630393322,
+      "frequency_drop_Hz": 6.003567210033367e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 9.684641977258934e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 11,
+      "event": "combined",
+      "rms_MW": 0.016907291029449007,
+      "rms_by_site_MW": [
+        0.010796815561104454,
+        0.013010967054526715
+      ],
+      "hess_peak_MW": 5.899083213316246,
+      "energy_excursion_kWh": 2.7280852421409207,
+      "frequency_drop_Hz": 0.047300611430256545,
+      "clipping_max": 0.0,
+      "kcl_max": 2.3240239789642204e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 12,
+      "event": "grid",
+      "rms_MW": 0.0064102703806140715,
+      "rms_by_site_MW": [
+        0.004924852830553727,
+        0.004103339000127215
+      ],
+      "hess_peak_MW": 2.0950711755527007,
+      "energy_excursion_kWh": 2.750433589582415,
+      "frequency_drop_Hz": 0.048541829200234865,
+      "clipping_max": 0.0,
+      "kcl_max": 2.4534832065298273e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 13,
+      "event": "server",
+      "rms_MW": 0.017113486903429797,
+      "rms_by_site_MW": [
+        0.009390123648655997,
+        0.014307236345878074
+      ],
+      "hess_peak_MW": 5.112986836543057,
+      "energy_excursion_kWh": 0.13024111785630482,
+      "frequency_drop_Hz": 6.0051432160257434e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 9.83935155574045e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 13,
+      "event": "combined",
+      "rms_MW": 0.017595510675603842,
+      "rms_by_site_MW": [
+        0.011013646899492123,
+        0.013722302208762067
+      ],
+      "hess_peak_MW": 5.97546481278779,
+      "energy_excursion_kWh": 2.729926277130498,
+      "frequency_drop_Hz": 0.047328126836549966,
+      "clipping_max": 0.0,
+      "kcl_max": 3.66621039082915e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 4,
+      "event": "server",
+      "rms_MW": 0.016356257916968646,
+      "rms_by_site_MW": [
+        0.008988207856959618,
+        0.013665258598595525
+      ],
+      "hess_peak_MW": 4.888479033361028,
+      "energy_excursion_kWh": 0.12972084092830882,
+      "frequency_drop_Hz": 5.365339861729268e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 9.439227177665543e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 4,
+      "event": "combined",
+      "rms_MW": 0.016465859112248883,
+      "rms_by_site_MW": [
+        0.009704505818318028,
+        0.013302145809103924
+      ],
+      "hess_peak_MW": 5.999323597389041,
+      "energy_excursion_kWh": 2.785307898376241,
+      "frequency_drop_Hz": 0.04842515879595055,
+      "clipping_max": 0.0,
+      "kcl_max": 3.270052566402282e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 5,
+      "event": "grid",
+      "rms_MW": 0.007458944006514109,
+      "rms_by_site_MW": [
+        0.007061563139127381,
+        0.002402118174534757
+      ],
+      "hess_peak_MW": 2.039928300873263,
+      "energy_excursion_kWh": 2.693142035374872,
+      "frequency_drop_Hz": 0.04741828708994644,
+      "clipping_max": 0.0,
+      "kcl_max": 2.5483979509965948e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 6,
+      "event": "server",
+      "rms_MW": 0.016169797672499927,
+      "rms_by_site_MW": [
+        0.008821600041111722,
+        0.013551447505128069
+      ],
+      "hess_peak_MW": 4.794968743686276,
+      "energy_excursion_kWh": 0.129359548641867,
+      "frequency_drop_Hz": 5.589033036379476e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 9.546585744146796e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 6,
+      "event": "combined",
+      "rms_MW": 0.016343073045567952,
+      "rms_by_site_MW": [
+        0.009787661132263998,
+        0.013088075723067097
+      ],
+      "hess_peak_MW": 5.895933688763969,
+      "energy_excursion_kWh": 2.7712166282040225,
+      "frequency_drop_Hz": 0.04814855333124424,
+      "clipping_max": 0.0,
+      "kcl_max": 4.778688989653945e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 7,
+      "event": "grid",
+      "rms_MW": 0.006983899151154985,
+      "rms_by_site_MW": [
+        0.0064724258300882485,
+        0.0026234616878296085
+      ],
+      "hess_peak_MW": 2.043828094791776,
+      "energy_excursion_kWh": 2.70688928519228,
+      "frequency_drop_Hz": 0.04769437053940839,
+      "clipping_max": 0.0,
+      "kcl_max": 4.614780129211238e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 8,
+      "event": "server",
+      "rms_MW": 0.0166817012750459,
+      "rms_by_site_MW": [
+        0.009201537571616417,
+        0.013914412087759922
+      ],
+      "hess_peak_MW": 5.0024967452247875,
+      "energy_excursion_kWh": 0.13001561589123192,
+      "frequency_drop_Hz": 5.5909513965168856e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 9.603207118402679e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 8,
+      "event": "combined",
+      "rms_MW": 0.01681587325978522,
+      "rms_by_site_MW": [
+        0.010072584013042053,
+        0.013465386915694967
+      ],
+      "hess_peak_MW": 5.963189878947602,
+      "energy_excursion_kWh": 2.7717590756803503,
+      "frequency_drop_Hz": 0.04815698246881883,
+      "clipping_max": 0.0,
+      "kcl_max": 5.3036153593866153e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 9,
+      "event": "grid",
+      "rms_MW": 0.006860990848487885,
+      "rms_by_site_MW": [
+        0.006328601540366451,
+        0.0026499052749685034
+      ],
+      "hess_peak_MW": 2.0537243290177476,
+      "energy_excursion_kWh": 2.708176620732712,
+      "frequency_drop_Hz": 0.04770984669593803,
+      "clipping_max": 0.0,
+      "kcl_max": 2.4611288701459344e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 10,
+      "event": "server",
+      "rms_MW": 0.015869736595893053,
+      "rms_by_site_MW": [
+        0.008627401291418126,
+        0.013319778022920056
+      ],
+      "hess_peak_MW": 4.730099239371698,
+      "energy_excursion_kWh": 0.12905027459636287,
+      "frequency_drop_Hz": 5.364089670445438e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 8.255285344205276e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 10,
+      "event": "combined",
+      "rms_MW": 0.016027930697517127,
+      "rms_by_site_MW": [
+        0.009444324893466935,
+        0.012949876051571017
+      ],
+      "hess_peak_MW": 5.928021605842848,
+      "energy_excursion_kWh": 2.7850180808531126,
+      "frequency_drop_Hz": 0.04841999753583126,
+      "clipping_max": 0.0,
+      "kcl_max": 4.1470141556865237e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 11,
+      "event": "grid",
+      "rms_MW": 0.007899856910475022,
+      "rms_by_site_MW": [
+        0.007441813018827654,
+        0.0026508787597299137
+      ],
+      "hess_peak_MW": 2.0281541334543745,
+      "energy_excursion_kWh": 2.691829167394674,
+      "frequency_drop_Hz": 0.04740164825181914,
+      "clipping_max": 0.0,
+      "kcl_max": 2.2995761545156934e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 12,
+      "event": "server",
+      "rms_MW": 0.016882459884439364,
+      "rms_by_site_MW": [
+        0.009383664011620038,
+        0.014034397082409038
+      ],
+      "hess_peak_MW": 5.1103020379074255,
+      "energy_excursion_kWh": 0.13034146188213674,
+      "frequency_drop_Hz": 5.364838282950757e-05,
+      "clipping_max": 0.0,
+      "kcl_max": 9.78284120378703e-12
+    },
+    {
+      "name": "independent_local_q",
+      "op": 12,
+      "event": "combined",
+      "rms_MW": 0.01701138342967233,
+      "rms_by_site_MW": [
+        0.010055822895696318,
+        0.013721063810132215
+      ],
+      "hess_peak_MW": 6.0741045378278,
+      "energy_excursion_kWh": 2.785799860207678,
+      "frequency_drop_Hz": 0.04843286930807267,
+      "clipping_max": 0.0,
+      "kcl_max": 2.4550671825357417e-11
+    },
+    {
+      "name": "independent_local_q",
+      "op": 13,
+      "event": "grid",
+      "rms_MW": 0.007366981082259089,
+      "rms_by_site_MW": [
+        0.006921561840329939,
+        0.0025227746543937963
+      ],
+      "hess_peak_MW": 2.0515772393614196,
+      "energy_excursion_kWh": 2.694611723027881,
+      "frequency_drop_Hz": 0.047436072686968256,
+      "clipping_max": 0.0,
+      "kcl_max": 3.646635077236837e-11
+    }
+  ],
+  "frequency": {
+    "name": "independent_local_q",
+    "label": "Independent local synthesis",
+    "controller_states": 17,
+    "points": [
+      {
+        "op": 1,
+        "isolation": 0.02486604159630061,
+        "grid_error": 0.219890278844658,
+        "noise_MW": 0.9906084390124846,
+        "outband": 1.0477815311709453,
+        "pole_max": -0.012566163049397021,
+        "pass": true
+      },
+      {
+        "op": 2,
+        "isolation": 0.024821659002849054,
+        "grid_error": 0.26517795244216646,
+        "noise_MW": 0.9789744673650529,
+        "outband": 1.0477807963459433,
+        "pole_max": -0.012566049757198626,
+        "pass": true
+      },
+      {
+        "op": 3,
+        "isolation": 0.024936803397951936,
+        "grid_error": 0.1827641406915681,
+        "noise_MW": 1.0046656194308907,
+        "outband": 1.0477821973237313,
+        "pole_max": -0.012566284310460906,
+        "pass": true
+      },
+      {
+        "op": 4,
+        "isolation": 0.024613412066745655,
+        "grid_error": 0.3055718467010687,
+        "noise_MW": 0.9606666473079281,
+        "outband": 1.0477012667100896,
+        "pole_max": -0.012566201483437463,
+        "pass": true
+      },
+      {
+        "op": 5,
+        "isolation": 0.025105662307435134,
+        "grid_error": 0.16149928595831547,
+        "noise_MW": 1.175381177188944,
+        "outband": 1.0478610328805207,
+        "pole_max": -0.012566053619483564,
+        "pass": true
+      },
+      {
+        "op": 6,
+        "isolation": 0.024713068031135398,
+        "grid_error": 0.30671973593882373,
+        "noise_MW": 0.9695543660174546,
+        "outband": 1.0477413079990134,
+        "pole_max": -0.01256617530573426,
+        "pass": true
+      },
+      {
+        "op": 7,
+        "isolation": 0.024965288325823964,
+        "grid_error": 0.20112255503628698,
+        "noise_MW": 1.0704809998446,
+        "outband": 1.0478208256518646,
+        "pole_max": -0.012566052351216614,
+        "pass": true
+      },
+      {
+        "op": 8,
+        "isolation": 0.024774153905139415,
+        "grid_error": 0.2540395854720973,
+        "noise_MW": 0.9694392332812456,
+        "outband": 1.0477417433847256,
+        "pole_max": -0.012566238818567589,
+        "pass": true
+      },
+      {
+        "op": 9,
+        "isolation": 0.025018322032151725,
+        "grid_error": 0.1673323497382778,
+        "noise_MW": 1.0888924242808062,
+        "outband": 1.0478218446552523,
+        "pole_max": -0.012566152558157965,
+        "pass": true
+      },
+      {
+        "op": 10,
+        "isolation": 0.024559858448936874,
+        "grid_error": 0.3690635255175832,
+        "noise_MW": 0.9606703378808342,
+        "outband": 1.0477009649420492,
+        "pole_max": -0.012566149313578856,
+        "pass": true
+      },
+      {
+        "op": 11,
+        "isolation": 0.025075611224473725,
+        "grid_error": 0.1937350427878365,
+        "noise_MW": 1.1496185513623505,
+        "outband": 1.04785967126492,
+        "pole_max": -0.012565960993613205,
+        "pass": true
+      },
+      {
+        "op": 12,
+        "isolation": 0.02468652658954634,
+        "grid_error": 0.2527212045357771,
+        "noise_MW": 0.960731921525531,
+        "outband": 1.0477014357234793,
+        "pole_max": -0.012566264758692144,
+        "pass": true
+      },
+      {
+        "op": 13,
+        "isolation": 0.025169899028568303,
+        "grid_error": 0.17363697030669092,
+        "noise_MW": 1.2044551891990825,
+        "outband": 1.0478624872278954,
+        "pole_max": -0.012566149871795844,
+        "pass": true
+      }
+    ],
+    "pass_count": 13
+  },
+  "completed": 39,
+  "max_clipping": 0.0,
+  "max_kcl": 5.3036153593866153e-11
+}

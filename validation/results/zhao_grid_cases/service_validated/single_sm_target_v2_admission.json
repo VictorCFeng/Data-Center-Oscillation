@@ -1,0 +1,124 @@
+{
+  "kind": "single_sm",
+  "theta": [
+    0.0,
+    2.0,
+    12.0
+  ],
+  "physical": {
+    "machine_frequency_1.5_3_ratio": 1.1033255251273417,
+    "pcc_voltage_1.5_3_ratio": 12.265007990631208,
+    "machine_frequency_3_5.5_ratio": 1.0263370246302854,
+    "pcc_voltage_3_5.5_ratio": 1.7864478334531022,
+    "pole_max": -0.03488006497677742,
+    "min_modal_damping": 0.5278069675678836,
+    "sinusoidal_grid_power_MW": 0.7418224863607072,
+    "theta": [
+      0.0,
+      2.0,
+      12.0
+    ]
+  },
+  "search": "No POD added: no weakly damped 1-20 Hz grid mode in baseline.",
+  "checks": [
+    {
+      "op": 1,
+      "baseline_modes": [],
+      "reference_modes": [],
+      "pole_max": -0.034978074885144574
+    },
+    {
+      "op": 2,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 5.325650994340904,
+          "damping": 0.5350608261205138
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 5.325650994340934,
+          "damping": 0.5350608261205116
+        }
+      ],
+      "pole_max": -0.03506903296239324
+    },
+    {
+      "op": 3,
+      "baseline_modes": [],
+      "reference_modes": [],
+      "pole_max": -0.03488412966229226
+    },
+    {
+      "op": 4,
+      "baseline_modes": [],
+      "reference_modes": [],
+      "pole_max": -0.03506812205947136
+    },
+    {
+      "op": 5,
+      "baseline_modes": [],
+      "reference_modes": [],
+      "pole_max": -0.03488546111536634
+    },
+    {
+      "op": 6,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 5.418326514343399,
+          "damping": 0.5278069675678839
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 5.41832651434341,
+          "damping": 0.5278069675678836
+        }
+      ],
+      "pole_max": -0.03506411274767465
+    },
+    {
+      "op": 7,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 5.418319863837505,
+          "damping": 0.5278074978721277
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 5.418319863837503,
+          "damping": 0.5278074978721272
+        }
+      ],
+      "pole_max": -0.034983198469648764
+    },
+    {
+      "op": 8,
+      "baseline_modes": [],
+      "reference_modes": [],
+      "pole_max": -0.03498210746766531
+    },
+    {
+      "op": 9,
+      "baseline_modes": [],
+      "reference_modes": [],
+      "pole_max": -0.03488006497677742
+    }
+  ],
+  "service_bands_Hz": [
+    [
+      0.005,
+      2.0
+    ]
+  ],
+  "service_rationale": "0.005-2 Hz explicitly scoped transient frequency service with 10 s washout and 2 Hz rolloff; no claim of universal grid boundary. Network additionally targets its actual 2.25/3.89 Hz modes and their operating-point variation.",
+  "isolation_band_Hz": [
+    1.0,
+    20.0
+  ],
+  "no_out_of_service_target_penalty": true,
+  "native_model": "Zhao device equations unchanged; finite SM / modified IEEE9 SM-GFM-GFL network.",
+  "grid_event": "conductance disturbance, not prescribed PCC frequency",
+  "literature": "You et al. data-center RBC port adaptation only; support augmentation ours, not DPC."
+}

@@ -1,0 +1,362 @@
+{
+  "kind": "ieee9_two_dc",
+  "theta": [
+    0.9191121527029325,
+    -0.7735119273474431,
+    11.6835689405438,
+    12.0,
+    14.142876666764423,
+    2.012618852328596
+  ],
+  "physical": {
+    "machine_frequency_1.5_3_ratio": 0.7215064270632492,
+    "pcc_voltage_1.5_3_ratio": 0.8393420848587394,
+    "machine_frequency_3_5.5_ratio": 1.0367609982589239,
+    "pcc_voltage_3_5.5_ratio": 0.9578811401320177,
+    "pole_max": -0.07126969716623753,
+    "min_modal_damping": 0.100000336604993,
+    "sinusoidal_grid_power_MW": 0.6411599016512097,
+    "theta": [
+      0.9191121527029325,
+      -0.7735119273474431,
+      11.6835689405438,
+      12.0,
+      14.142876666764423,
+      2.012618852328596
+    ]
+  },
+  "search": "Grid-only physical search, 18.5s; no global-optimum claim.",
+  "checks": [
+    {
+      "op": 1,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 3.8915664195322166,
+          "damping": 0.15061956342760371
+        },
+        {
+          "frequency_Hz": 2.2526111503718673,
+          "damping": 0.05905744902636037
+        },
+        {
+          "frequency_Hz": 1.6522164396634962,
+          "damping": 0.8054315562590559
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 3.8863740545426966,
+          "damping": 0.1870682596804334
+        },
+        {
+          "frequency_Hz": 2.281316703085109,
+          "damping": 0.10711240217614791
+        },
+        {
+          "frequency_Hz": 2.028462559247019,
+          "damping": 0.7151019965014942
+        }
+      ],
+      "pole_max": -0.0716173178902303
+    },
+    {
+      "op": 2,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 3.886020751235289,
+          "damping": 0.1496465991836693
+        },
+        {
+          "frequency_Hz": 2.237995279326149,
+          "damping": 0.05714056556428886
+        },
+        {
+          "frequency_Hz": 1.6334530344616773,
+          "damping": 0.8092182993103537
+        },
+        {
+          "frequency_Hz": 5.325699834896256,
+          "damping": 0.5350570730305666
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 3.8770260772183622,
+          "damping": 0.1860370212303804
+        },
+        {
+          "frequency_Hz": 2.2646481159844916,
+          "damping": 0.10609012201374828
+        },
+        {
+          "frequency_Hz": 2.0104960124194933,
+          "damping": 0.7217419080133056
+        },
+        {
+          "frequency_Hz": 5.325699834896267,
+          "damping": 0.5350570730305669
+        }
+      ],
+      "pole_max": -0.07162371392828688
+    },
+    {
+      "op": 3,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 3.8992067896735656,
+          "damping": 0.1519301982362611
+        },
+        {
+          "frequency_Hz": 2.2659112269171966,
+          "damping": 0.06087460003560879
+        },
+        {
+          "frequency_Hz": 1.6745335843682487,
+          "damping": 0.8008211629181304
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 3.8987351396473264,
+          "damping": 0.18842037220757712
+        },
+        {
+          "frequency_Hz": 2.296690059939686,
+          "damping": 0.108032140786121
+        },
+        {
+          "frequency_Hz": 2.048158714254424,
+          "damping": 0.7073420368195374
+        }
+      ],
+      "pole_max": -0.07161102485062318
+    },
+    {
+      "op": 4,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 3.718466095197857,
+          "damping": 0.07956510129544303
+        },
+        {
+          "frequency_Hz": 2.395403023704115,
+          "damping": 0.07805332445945523
+        },
+        {
+          "frequency_Hz": 1.6244810056642491,
+          "damping": 0.8249640184187026
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 3.699075516670485,
+          "damping": 0.100000336604993
+        },
+        {
+          "frequency_Hz": 2.4263883822270293,
+          "damping": 0.1203610188703862
+        },
+        {
+          "frequency_Hz": 1.9901175476410737,
+          "damping": 0.7560681543091812
+        }
+      ],
+      "pole_max": -0.07126969716623753
+    },
+    {
+      "op": 5,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 4.096525034673593,
+          "damping": 0.21080059559687264
+        },
+        {
+          "frequency_Hz": 2.129586286496925,
+          "damping": 0.04538279481223828
+        },
+        {
+          "frequency_Hz": 1.6392856263859814,
+          "damping": 0.7901046006692153
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 4.140255799177895,
+          "damping": 0.2581449503564379
+        },
+        {
+          "frequency_Hz": 2.1549778827091286,
+          "damping": 0.10003630862826741
+        },
+        {
+          "frequency_Hz": 1.98834205897819,
+          "damping": 0.6830719322989268
+        }
+      ],
+      "pole_max": -0.07197611494636424
+    },
+    {
+      "op": 6,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 3.7989659999272427,
+          "damping": 0.11571453944447921
+        },
+        {
+          "frequency_Hz": 2.3147098819664693,
+          "damping": 0.06684337111698357
+        },
+        {
+          "frequency_Hz": 1.6332933093040816,
+          "damping": 0.8167501950256099
+        },
+        {
+          "frequency_Hz": 5.41838426673964,
+          "damping": 0.52780236242306
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 3.7818316119507127,
+          "damping": 0.1440541967619324
+        },
+        {
+          "frequency_Hz": 2.3439130598309776,
+          "damping": 0.11224939907100864
+        },
+        {
+          "frequency_Hz": 2.007230969824838,
+          "damping": 0.7385855669902908
+        },
+        {
+          "frequency_Hz": 5.418384266739691,
+          "damping": 0.527802362423053
+        }
+      ],
+      "pole_max": -0.07144490836640775
+    },
+    {
+      "op": 7,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 3.9860145119293913,
+          "damping": 0.18181318620343095
+        },
+        {
+          "frequency_Hz": 2.181276144863553,
+          "damping": 0.05068220611849275
+        },
+        {
+          "frequency_Hz": 1.6412914680335275,
+          "damping": 0.79912430783517
+        },
+        {
+          "frequency_Hz": 5.4183970601769875,
+          "damping": 0.527801342296428
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 3.9980004705503047,
+          "damping": 0.22513405575000456
+        },
+        {
+          "frequency_Hz": 2.2072253634752066,
+          "damping": 0.10250369110841016
+        },
+        {
+          "frequency_Hz": 2.010978169648633,
+          "damping": 0.7005954077808599
+        },
+        {
+          "frequency_Hz": 5.418397060176992,
+          "damping": 0.527801342296427
+        }
+      ],
+      "pole_max": -0.07179886385529766
+    },
+    {
+      "op": 8,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 3.803820148572673,
+          "damping": 0.11692784933638707
+        },
+        {
+          "frequency_Hz": 2.3280906721326877,
+          "damping": 0.06858892223686275
+        },
+        {
+          "frequency_Hz": 1.6540893588858268,
+          "damping": 0.8127747302488779
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 3.7889060632326736,
+          "damping": 0.1455725959704712
+        },
+        {
+          "frequency_Hz": 2.3592642240382666,
+          "damping": 0.11331528525974364
+        },
+        {
+          "frequency_Hz": 2.0304967075154394,
+          "damping": 0.7314092569685444
+        }
+      ],
+      "pole_max": -0.07143941277322555
+    },
+    {
+      "op": 9,
+      "baseline_modes": [
+        {
+          "frequency_Hz": 3.994621036344132,
+          "damping": 0.1827665609724104
+        },
+        {
+          "frequency_Hz": 2.1957624443823938,
+          "damping": 0.052691108388336454
+        },
+        {
+          "frequency_Hz": 1.6613622916342554,
+          "damping": 0.7947515666720567
+        }
+      ],
+      "reference_modes": [
+        {
+          "frequency_Hz": 4.013095145539428,
+          "damping": 0.2255953696008449
+        },
+        {
+          "frequency_Hz": 2.223868341792906,
+          "damping": 0.10340002687708744
+        },
+        {
+          "frequency_Hz": 2.025095832547468,
+          "damping": 0.6937074647339885
+        }
+      ],
+      "pole_max": -0.07179178215489937
+    }
+  ],
+  "service_bands_Hz": [
+    [
+      0.005,
+      2.0
+    ],
+    [
+      1.5,
+      5.5
+    ]
+  ],
+  "service_rationale": "0.005-2 Hz explicitly scoped transient frequency service with 10 s washout and 2 Hz rolloff; no claim of universal grid boundary. Network additionally targets its actual 2.25/3.89 Hz modes and their operating-point variation.",
+  "isolation_band_Hz": [
+    1.0,
+    20.0
+  ],
+  "no_out_of_service_target_penalty": true,
+  "native_model": "Zhao device equations unchanged; finite SM / modified IEEE9 SM-GFM-GFL network.",
+  "grid_event": "conductance disturbance, not prescribed PCC frequency",
+  "literature": "You et al. data-center RBC port adaptation only; support augmentation ours, not DPC."
+}

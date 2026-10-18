@@ -1,0 +1,6 @@
+numpy==1.26.4
+scipy==1.17.1
+cvxpy==1.7.5
+clarabel==0.11.1
+matplotlib==3.6.3
+proplot==0.9.7

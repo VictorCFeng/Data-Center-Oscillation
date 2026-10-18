@@ -1,0 +1,246 @@
+{
+  "scope": "13 separate equilibria per system, 9 coefficient-design points. The other four were previously inspected; not blind validation. 5-MW grid load step; no short-circuit event.",
+  "source": {
+    "url": "https://arxiv.org/html/2606.04869v2",
+    "method": "Published rule-based allocation baseline, NOT the learned DPC controller",
+    "changes": [
+      "Both branch actuators standardized to 5 ms; original 0.25/0.015 s not used in equal-hardware ranking.",
+      "Continuous-time filters instead of original 10-ms discrete update.",
+      "Known equilibrium schedule instead of offline future-horizon mean.",
+      "Endogenous data-center power d=p+u, not externally measured server command.",
+      "The +support branch is our addition, not attributed to the source."
+    ],
+    "limits": "20 MW/site aggregate clamp. Branch command magnitudes separately postchecked; no SOC/ramp-limit model or DPC replication."
+  },
+  "systems": {
+    "single_sm": {
+      "table": [
+        {
+          "name": "uncontrolled",
+          "label": "No HESS",
+          "states": 0,
+          "rms_MW": {
+            "server": 2.408739573417802,
+            "grid": 2.173795218447305,
+            "combined": 3.025158432745131
+          },
+          "frequency_pass": 0,
+          "worst_isolation": 1.0,
+          "worst_grid_error": 1.0000133478939373,
+          "noise_MW": 0.0,
+          "hess_peak_MW": 0.0,
+          "energy_excursion_kWh": 0.0,
+          "grid_frequency_drop_Hz": 0.5169789750047382
+        },
+        {
+          "name": "power_only",
+          "label": "Power-only feedback",
+          "states": 4,
+          "rms_MW": {
+            "server": 0.047289828335661636,
+            "grid": 2.1737972825024263,
+            "combined": 2.054326770055892
+          },
+          "frequency_pass": 0,
+          "worst_isolation": 0.0619240919119498,
+          "worst_grid_error": 1.0000000917167085,
+          "noise_MW": 1.099652954932166,
+          "hess_peak_MW": 4.830036552315303,
+          "energy_excursion_kWh": 0.1291639224639199,
+          "grid_frequency_drop_Hz": 0.516979098269883
+        },
+        {
+          "name": "rbc_adapted",
+          "label": "RBC (adapted)",
+          "states": 4,
+          "rms_MW": {
+            "server": 0.46800397424392065,
+            "grid": 2.1737908160781916,
+            "combined": 2.093937957392693
+          },
+          "frequency_pass": 0,
+          "worst_isolation": 0.5535622267751377,
+          "worst_grid_error": 1.0000000235421864,
+          "noise_MW": 0.29999261573902586,
+          "hess_peak_MW": 4.783127147118757,
+          "energy_excursion_kWh": 0.12962305229475335,
+          "grid_frequency_drop_Hz": 0.5169782915192234
+        },
+        {
+          "name": "rbc_support_added",
+          "label": "RBC + support",
+          "states": 7,
+          "rms_MW": {
+            "server": 0.4322113062801159,
+            "grid": 0.00350016530721245,
+            "combined": 0.40025213247072355
+          },
+          "frequency_pass": 13,
+          "worst_isolation": 0.5145779563360333,
+          "worst_grid_error": 0.006724388249647824,
+          "noise_MW": 0.38542004966222926,
+          "hess_peak_MW": 7.802575451917681,
+          "energy_excursion_kWh": 14.59634365272811,
+          "grid_frequency_drop_Hz": 0.32853617210563124
+        },
+        {
+          "name": "lead_support",
+          "label": "Lead + support",
+          "states": 6,
+          "rms_MW": {
+            "server": 0.050518066104754886,
+            "grid": 0.007043047227432837,
+            "combined": 0.047044350769200265
+          },
+          "frequency_pass": 13,
+          "worst_isolation": 0.06530426987955254,
+          "worst_grid_error": 0.006113848176824294,
+          "noise_MW": 1.0441923353565281,
+          "hess_peak_MW": 7.831423095816832,
+          "energy_excursion_kWh": 14.60338133788101,
+          "grid_frequency_drop_Hz": 0.3284474024055206
+        },
+        {
+          "name": "lead_support_optimized",
+          "label": "Lead + support (optimized)",
+          "states": 6,
+          "rms_MW": {
+            "server": 0.04389498416108914,
+            "grid": 0.007143454568764782,
+            "combined": 0.04095859124329026
+          },
+          "frequency_pass": 13,
+          "worst_isolation": 0.05807401403424519,
+          "worst_grid_error": 0.006137467540396443,
+          "noise_MW": 1.0998926895244,
+          "hess_peak_MW": 7.833824924211344,
+          "energy_excursion_kWh": 14.603106530290164,
+          "grid_frequency_drop_Hz": 0.3284509764148491
+        },
+        {
+          "name": "centered_q_g3_u20",
+          "label": "Affine Q (extended certificate)",
+          "states": 6,
+          "rms_MW": {
+            "server": 0.006248003820671125,
+            "grid": 0.0038257709660463753,
+            "combined": 0.0066837653734024465
+          },
+          "frequency_pass": 13,
+          "worst_isolation": 0.009021038185207034,
+          "worst_grid_error": 0.009404096981517186,
+          "noise_MW": 0.8192701812037816,
+          "hess_peak_MW": 7.8460837420888305,
+          "energy_excursion_kWh": 14.599340301812582,
+          "grid_frequency_drop_Hz": 0.32853899977520973
+        }
+      ]
+    },
+    "ieee9_two_dc": {
+      "table": [
+        {
+          "name": "uncontrolled",
+          "label": "No HESS",
+          "states": 0,
+          "rms_MW": {
+            "server": 3.538460390988121,
+            "grid": 0.6083347662557727,
+            "combined": 3.3199020062438587
+          },
+          "frequency_pass": 0,
+          "worst_isolation": 1.0,
+          "worst_grid_error": 1.2817046405064205,
+          "noise_MW": 0.0,
+          "hess_peak_MW": 0.0,
+          "energy_excursion_kWh": 0.0,
+          "grid_frequency_drop_Hz": 0.05569028326223746
+        },
+        {
+          "name": "power_only",
+          "label": "Power-only feedback",
+          "states": 8,
+          "rms_MW": {
+            "server": 0.025880087432788797,
+            "grid": 0.6079061709643999,
+            "combined": 0.5741180854972479
+          },
+          "frequency_pass": 0,
+          "worst_isolation": 0.03700486784647122,
+          "worst_grid_error": 1.0018641392735173,
+          "noise_MW": 1.4140337300738242,
+          "hess_peak_MW": 5.620299163181008,
+          "energy_excursion_kWh": 0.12957297561913145,
+          "grid_frequency_drop_Hz": 0.05566534581082028
+        },
+        {
+          "name": "rbc_adapted",
+          "label": "RBC (adapted)",
+          "states": 8,
+          "rms_MW": {
+            "server": 0.6927474044957886,
+            "grid": 0.6076301918579096,
+            "combined": 0.8575083271958157
+          },
+          "frequency_pass": 0,
+          "worst_isolation": 0.5646925670257728,
+          "worst_grid_error": 1.0456706908203977,
+          "noise_MW": 0.3046797501220491,
+          "hess_peak_MW": 5.062572907430588,
+          "energy_excursion_kWh": 0.12995693147034426,
+          "grid_frequency_drop_Hz": 0.05566966048495159
+        },
+        {
+          "name": "rbc_support_added",
+          "label": "RBC + support",
+          "states": 20,
+          "rms_MW": {
+            "server": 0.7292393810402137,
+            "grid": 0.020667941820105278,
+            "combined": 0.6752429102656813
+          },
+          "frequency_pass": 1,
+          "worst_isolation": 0.6809014742335139,
+          "worst_grid_error": 0.4948287203956721,
+          "noise_MW": 1.028783737620903,
+          "hess_peak_MW": 5.858355372593965,
+          "energy_excursion_kWh": 2.780636156810627,
+          "grid_frequency_drop_Hz": 0.04852997348202104
+        },
+        {
+          "name": "lead_support",
+          "label": "Lead + support",
+          "states": 17,
+          "rms_MW": {
+            "server": 0.10231018530463731,
+            "grid": 0.04011532535199564,
+            "combined": 0.10143867318380399
+          },
+          "frequency_pass": 12,
+          "worst_isolation": 0.03926180983645691,
+          "worst_grid_error": 0.4340362604717422,
+          "noise_MW": 1.5049876773448911,
+          "hess_peak_MW": 5.9579217979049695,
+          "energy_excursion_kWh": 2.7882017376754025,
+          "grid_frequency_drop_Hz": 0.04864086469844375
+        },
+        {
+          "name": "lead_support_optimized",
+          "label": "Lead + support (optimized)",
+          "states": 17,
+          "rms_MW": {
+            "server": 0.08830709647155731,
+            "grid": 0.03531087114176401,
+            "combined": 0.08783039009372076
+          },
+          "frequency_pass": 13,
+          "worst_isolation": 0.03713510500383058,
+          "worst_grid_error": 0.4499955376610003,
+          "noise_MW": 1.414197639929079,
+          "hess_peak_MW": 5.971198855265503,
+          "energy_excursion_kWh": 2.781721288029129,
+          "grid_frequency_drop_Hz": 0.04861222022654932
+        }
+      ]
+    }
+  }
+}
