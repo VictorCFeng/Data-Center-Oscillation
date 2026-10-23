@@ -1,6 +1,6 @@
 # Case-study reproduction
 
-Code and results for *Data Center Oscillation Isolation and Grid Support: Fundamental Limits and Source-Selective Control*. The cases are a single-generator system (`single_sm`) and a modified IEEE 9-bus network with two independently controlled data centers (`ieee9_two_dc`).
+Code and results for *Data Center Oscillation Isolation and Grid Support: Fundamental Limits and Source-Selective Control* ([arXiv:2610.26812](https://arxiv.org/abs/2610.26812)). The cases are a single-generator system (`single_sm`) and a modified IEEE 9-bus network with two independently controlled data centers (`ieee9_two_dc`).
 
 ## Model and benchmark sources
 
